@@ -1,0 +1,23 @@
+Name:                vin-upload2redis
+Version:             0.1
+Synopsis:            Console tool for uploading vin data to redis
+License:             BSD3
+Author:              Alexandr Ruchkin
+Maintainer:          voidex@live.com
+
+Build-type:          Simple
+
+Cabal-version:       >=1.6
+
+Executable vin2redis
+  Hs-Source-Dirs: src
+  Main-is: vin2redis.hs
+  Build-depends:
+    base >= 4 && < 5,
+    filepath,
+    vin-parser
+  ghc-options: -Wall
+
+source-repository head
+  type:     git
+  location: git://github.com/mvoidex/vin-upload2redis.git
