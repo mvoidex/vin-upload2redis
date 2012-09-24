@@ -55,4 +55,4 @@ main = do
     where
         stats v u t = void $ swapMVar v (u, t)
         onError :: E.SomeException -> IO ()
-        onError _ = return ()
+        onError e = putStrLn $ show e
